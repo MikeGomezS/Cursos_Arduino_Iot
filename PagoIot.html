@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formas de Pago</title>
+    <link rel="shortcut icon" href="img/par_ardu/fig1.png" type="image/png">
+    <link rel="stylesheet" href="css/DespuesPago.css">
+    <script src="https://kit.fontawesome.com/f0e60f2571.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav--container">
+            <a href="./index.html" class="link">Inicio</a>
+            <a href="InfoArduino.html" class="link">Arduino</a>
+            <a href="InfoIot.html" class="link">IoT</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card card-bien">
+                <h1>Felicidades, estas a un paso de ser parte del curso<br>"Internet de las cosas (Iot)"</h1>
+                <p>Es un gran honor para mí darles una cálida bienvenida a este curso en donde te extiendo la invitación a enamorarte del estudio, a enamorarte del conocimiento, a enamorarte del saber, a enamorarte de la práctica de entender el mundo y a tí mismos. Y no solo desde la perspectiva de este curso, sino desde la interdisciplinariedad que propone el contexto de este grupo y desde el contacto con el otro, pues siempre hay algo que tomar de quien nos rodea, aún desde su misma experiencia de vida.</p>
+                <h3>Los pagos se realizaran mediante transferencia electrotecnia o depósito, Paypal, entre otras.<br>Una ves hecho el pago, te enviarte el código con el que tendrás acceso al curso.<br>Para poder tener más información al respecto, te pido de favor que llenes el formulario que se encuentra en la parte de abajo, con esto me podre poner en contacto contigo.</h3>
+                <a class="flecha" href="#Formulario"><i class="fas fa-angle-double-down"></i></a>
+            </div>
+        </div>
+
+        <div class="container" id="Formulario">
+            <div class="card">
+                <div class="mensaje box">
+                    <h1>FORMULARIO</h2>
+                    <div class="box__section">
+                        <form class="contact-form" action="https://formsubmit.co/mikes13719@gmail.com" method="POST" target="_blank">
+                            <input type="hidden" name="_next" value="https://www.facebook.com/Cursos-de-Arduino-e-Iot-103970235097363/">
+                            <div class="mensaje--section">
+                                <label for="Nombre" class="text">Nombre</label>
+                                <input type="text" name="nombre" title="Nombre sólo acepta letras y espacios en planco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                            </div>
+                            <div class="mensaje--section">
+                                <label for="Correo" class="text">Correo</label>
+                                <input type="email" name="email" title="Estructura de email incorrecta" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                            </div>
+                            <div class="mensaje--section">
+                                <label for="Asunto" class="text">País</label>
+                                <input type="text" name="subject" title="El asunto es requerido" required>
+                            </div>
+                            <div class="mensaje--section">
+                                <label for="Asunto" class="text">Curso deseado: Arduino o Iot</label>
+                                <input type="text" name="subject" title="El curso que deseas es requerido" required>
+                                </div>
+                            <div class="mensaje--section">
+                                <label for="Mensaje" class="text">Mensaje</label>
+                                <textarea  name="comments" cols="60" rows="5" data-pattern="^.{1,500}$" required></textarea>
+                            </div>
+                            <div class="mensaje--boton">
+                                <button type="submit" value="Enviar">Enviar</button>
+                            </div>
+                            <div class="mensaje--boton mensaje--boton-loader none">
+                                <img src="img/oval.svg" alt="Cargando">
+                            </div>
+                            <div class="mensaje--boton mensaje--boton-response none">
+                                <p>EL correo ha sido enviado</p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/correo.js"></script>
+</body>
+</html>
